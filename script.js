@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageInput = document.getElementById('message-input');
 
     // WebSocketサーバーへの接続
-    const ws = new WebSocket('wss://phpchat-gilt.vercel.app'); // サーバーのアドレスに合わせて変更
+    const ws = new WebSocket('ws://localhost:8080/'); // サーバーのアドレスに合わせて変更
 
     ws.onopen = () => {
         console.log('Connected to WebSocket server');
